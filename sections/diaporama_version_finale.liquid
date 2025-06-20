@@ -1,0 +1,88 @@
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+---------------------------------------------------------
+Copyright © 2019/2024 Theme Shopiweb Premium. Tous droits réservés.
+La copie, la modification, la distribution ou l'utilisation
+non autorisée de ce code ou de toute partie de celui-ci est formellement interdite.
+Les contrevenants seront poursuivis dans toute la mesure permise par la loi.
+---------------------------------------------------------
+{% comment %}
+---------------------------------------------------------
+Copyright © 2019/2024 Theme Shopiweb Premium. Tous droits réservés.
+---------------------------------------------------------
+{% endcomment %}
+
+{%- style -%}
+@media screen and (max-width: 767px) {
+  .carousel-caption .btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .carousel-caption .btn-wrapper .btn {
+    font-size: 14px;
+    padding: 8px 18px;
+    margin: 0;
+    min-width: 40%;
+    text-align: center;
+  }
+}
+{%- endstyle -%}
+
+<!-- Boutons dans le carousel -->
+<div class="carousel-caption {{ block.settings.caption_position_mobile }} {{ block.settings.caption_position_desktop }}"
+     style="color: {{ block.settings.caption_color }};">
+  <div style="max-width: {{ block.settings.caption_max_width }}px">
+    {% unless block.settings.subtitle_img == blank %}
+      <img
+        class="img-fluid mb-5"
+        src="{{ block.settings.subtitle_img.src | image_url: width: block.settings.brand_image_size }}"
+        alt="{{ block.settings.subtitle_img.alt | escape }}"
+        width="{{ block.settings.brand_image_size }}"
+        height="auto"
+        loading="lazy">
+    {% endunless %}
+
+    {% unless block.settings.subtitle == blank %}
+      <div class="subtitle mb-3 {{ block.settings.subtitle_size }}">
+        {{ block.settings.subtitle }}
+      </div>
+    {% endunless %}
+
+    <{{ block.settings.heading_tag }} class="title mb-3 {{ block.settings.title_size }}">
+      {{ block.settings.title }}
+    </{{ block.settings.heading_tag }}>
+
+    {% unless block.settings.description == blank %}
+      <div class="description rte mb-6 {{ block.settings.description_size }}">
+        {{ block.settings.description }}
+      </div>
+    {% endunless %}
+
+    <div class="btn-wrapper">
+      {% unless block.settings.btn_text == blank %}
+        <a 
+          class="btn {{ block.settings.btn_color }} {{ btn_shadow_sp }} {{ block.settings.btn_size }}"  
+          href="{{ block.settings.btn_url }}">
+          {{ block.settings.btn_text }}
+        </a>
+      {% endunless %}
+
+      {% unless block.settings.btn_secondary_text == blank %}
+        <a 
+          class="btn {{ block.settings.btn_secondary_color }} {{ btn_shadow_sp }} {{ block.settings.btn_secondary_size }}"  
+          href="{{ block.settings.btn_secondary_url }}">
+          {{ block.settings.btn_secondary_text }}
+        </a>
+      {% endunless %}
+    </div>
+  </div>
+</div>

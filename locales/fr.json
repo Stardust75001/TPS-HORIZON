@@ -1,0 +1,408 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "fr": {
+    "no_reviews": "Aucun avis",
+    "announcement": {
+      "shipping_notice": "Livraison dans toute l'Europe (EEE)"
+    },
+    "gift_card": {
+      "title": "Voici votre carte-cadeau !",
+      "instructions": "Utilisez ce code lors du paiement pour utiliser votre carte-cadeau.",
+      "print": "Imprimer",
+      "start_shopping": "Commencer à magasiner",
+      "disabled": "Désactivée",
+      "expired_on": "Expirée le {{ date }}",
+      "expires_on": "Expire le {{ date }}"
+    },
+"custom_sections": {
+  "image_banner_title": "Découvrez un havre d'élégance et d'innovation pour vos animaux de compagnie.",
+  "image_banner_description": "Sélections raffinées, friandises gourmandes et soins haut de gamme vous attendent.",
+  "image_banner_btn_primary": "ENTREZ !",
+  "image_banner_btn_secondary": "À PROPOS",
+  "image_but_title": "Découvrez un havre d'élégance et d'innovation pour vos animaux de compagnie.",
+  "image_but_description": "Sélections raffinées, friandises gourmandes et soins haut de gamme vous attendent.",
+  "image_but_btn_primary_label": "ENTREZ !",
+  "image_but_btn_secondary_label": "À PROPOS",
+  "banner_heading": "Titre de la bannière",
+  "banner_text": "Texte de description ici",
+  "multicolumn_title_1": "Titre 1",
+  "multicolumn_text_1": "Texte 1",
+  "multicolumn_title_2": "Titre 2",
+  "multicolumn_text_2": "Texte 2",
+  "multicolumn_title_3": "Titre 3",
+  "multicolumn_text_3": "Texte 3"
+},
+"custom": {
+  "ref_variant_label": "Référence variante liée"
+},
+"sections": {
+      "featured_collections": {
+        "settings": {
+          "btn_text": {
+            "label": "Texte du bouton",
+            "default": "Voir toutes les collections",
+            "info": "Laisser vide pour désactiver"
+          }
+        }
+      }
+    },
+    "collection": {
+      "btn_filter_products": "Filtrer les produits",
+      "sort_by": "Trier par",
+      "paginate_count": "{{ count }} sur {{ total }} produits affichés",
+      "empty_html": "Cette collection est vide.",
+      "custom_bundle": {
+        "add_to_bundle": "Ajouter au lot",
+        "added_to_bundle": "Ajouté au lot",
+        "bundle_contents_empty_html": "Le lot est actuellement vide.",
+        "bundle_contents_title": "Contenu du lot",
+        "bundle_price": "Prix du lot",
+        "button_atc_text": "Ajouter au panier",
+        "button_view_contents_text": "Voir le contenu du lot",
+        "progress_completed_text": "Offre complétée",
+        "progress_label": "Progression de l'offre",
+        "progress_uncompleted_text": "Non complétée",
+        "you_save": "Vous économisez"
+      },
+      "filters": {
+        "from": "De",
+        "title": "Filtres de la collection",
+        "to": "À",
+        "view_more": "Voir plus"
+      }
+    },
+    "product": {
+      "sold_out": "Épuisé",
+      "price_sale": "Prix soldé",
+      "price_regular": "Prix régulier",
+      "price_from": "À partir de ",
+      "color_options": "Options de couleur",
+      "color_swatches": "Échantillons de couleurs",
+      "in_stock": "En stock",
+      "out_of_stock": "Rupture de stock",
+      "product": "Produit",
+      "product_added_to_cart": "Produit ajouté au panier",
+      "remove": "Supprimer",
+      "wishlist": {
+        "add_to_wishlist": "Ajouter à la liste de souhaits",
+        "remove_from_wishlist": "Supprimer de la liste de souhaits",
+        "btn_label": "Ajouter à la liste de souhaits"
+      },
+      "bundle": {
+        "custom_bundle": {
+          "add_to_bundle": "Ajouter au lot",
+          "added_to_bundle": "Ajouté au lot",
+          "progress_label": "Progression de l'offre",
+          "progress_uncompleted_text": "Non terminé",
+          "progress_completed_text": "Terminé",
+          "bundle_price": "Prix du lot",
+          "you_save": "Vous économisez",
+          "button_atc_text": "Ajouter au panier",
+          "button_view_contents_text": "Voir le contenu du lot",
+          "bundle_contents_title": "Contenu du lot",
+          "bundle_contents_empty_html": "Le lot est vide pour le moment"
+        }
+      },
+      "add": "Ajouter au produit",
+      "add_to_cart": "Ajouter au panier",
+      "bought_together": {
+        "add_selected_to_cart": "Ajouter la sélection au panier",
+        "select_this": "Sélectionner cet article",
+        "this_item": "Cet article",
+        "total_price": "Prix total"
+      },
+      "buy_it_now": "Acheter maintenant",
+      "include_taxes": "Taxes incluses",
+      "inventory_bar": {
+        "label": "Niveau de stock",
+        "sold_out": "Épuisé",
+        "untracked": "Disponibilité limitée",
+        "verylow_html": "Seulement {{ count }} restant(s) !",
+        "low_html": "{{ count }} article(s) restant(s)",
+        "normal_html": "{{ count }} disponible(s)"
+      },
+      "product_options": "Options du produit",
+      "purchase_options": {
+        "option_deliver_every": "Livrer tous les",
+        "option_one_time": "Achat unique",
+        "option_subscription": "Abonnement"
+      },
+      "quantity": "Quantité",
+      "save": "Enregistrer le produit",
+      "select_variant": "Sélectionner une variante"
+    },
+    "general": {
+      "menu": "Menu",
+      "all_rights_reserved": "Tous droits réservés",
+      "secure_payments": "Paiements sécurisés",
+      "newsletter": {
+        "input_label": "Entrez votre courriel",
+        "submit_button": "S'abonner",
+        "confirmation_text": "Merci de votre inscription !"
+      },
+      "breadcrumbs": {
+        "home": "Accueil",
+        "label": "Libellé général des fil d'ariane"
+      },
+      "cookies": {
+        "consent": "Nous utilisons des cookies pour rendre votre expérience sur ce site aussi agréable, douce et croustillante que possible. En restant ici, vous acceptez notre recette.",
+        "consents": "Consentements généraux relatifs aux cookies"
+      },
+      "404_page": {
+        "title": "404 - Page introuvable",
+        "subtext": "La page que vous recherchez n'existe pas.",
+        "button": "Retour à la page d'accueil"
+      },
+      "search_page": {
+        "title": "Rechercher dans notre boutique",
+        "title_search_performed": "Résultats de la recherche",
+        "form": {
+          "input_label": "Rechercher des produits...",
+          "select_label": "Type de recherche",
+          "btn_text": "Rechercher"
+        },
+        "types": {
+          "products": "Produits",
+          "articles": "Articles",
+          "pages": "Pages"
+        },
+        "no_results": "Aucun résultat trouvé pour '{{ terms }}'.",
+        "results_with_count_and_term": "{{ count }} résultats pour '{{ terms }}'"
+      },
+      "offcanvas_search": {
+        "title": "Rechercher",
+        "input_label": "Rechercher dans la boutique",
+        "search_by_voice": "Recherche vocale",
+        "result_found": "1 résultat trouvé",
+        "results_found": "{{ count }} résultats trouvés",
+        "no_results": "Aucun résultat trouvé",
+        "search_for": "General offcanvas_search search_for",
+        "title_articles": "General offcanvas_search title_articles",
+        "title_collections": "General offcanvas_search title_collections",
+        "title_pages": "General offcanvas_search title_pages",
+        "title_popular_products": "General offcanvas_search title_popular_products",
+        "title_products": "General offcanvas_search title_products"
+      },
+      "accessibility": {
+        "close": "Fermer",
+        "load_more_products": "Charger plus de produits",
+        "sorted_by": "Trié par",
+        "previous_page": "Page précédente",
+        "next_page": "Page suivante",
+        "increase_qty": "Augmenter la quantité",
+        "decrease_qty": "Diminuer la quantité",
+        "account": "General accessibility account",
+        "cart": "General accessibility cart",
+        "cart_product_list": "General accessibility cart_product_list",
+        "menu": "General accessibility menu",
+        "model_3d_decrease": "General accessibility model_3d_decrease",
+        "model_3d_fullscreen": "General accessibility model_3d_fullscreen",
+        "model_3d_increase": "General accessibility model_3d_increase",
+        "model_3d_list_label": "General accessibility model_3d_list_label",
+        "next": "General accessibility next",
+        "payment_methods": "General accessibility payment_methods",
+        "previous": "General accessibility previous",
+        "product_media_gallery": "General accessibility product_media_gallery",
+        "product_options": "General accessibility product_options",
+        "search": "General accessibility search",
+        "skip_content": "General accessibility skip_content",
+        "skip_product_content": "General accessibility skip_product_content",
+        "slide_of": "General accessibility slide_of",
+        "toggle_sound": "General accessibility toggle_sound",
+        "utility_icons": "General accessibility utility_icons",
+        "wishlist": "General accessibility wishlist"
+      },
+      "wishlist": {
+        "offcanvas_title": "Votre liste de souhaits",
+        "empty_html": "Votre liste de souhaits est vide.",
+        "remove_from_wishlist": "Supprimer de la liste de souhaits",
+        "add_to_wishlist": "Ajouter à la liste de souhaits",
+        "btn_label": "Ajouter à la liste de souhaits"
+      },
+      "offcanvas_menu": {
+        "subtitle_guest_html": "Bienvenue invité",
+        "subtitle_customer_html": "Bon retour",
+        "title_guest": "Votre compte"
+      },
+      "contact": {
+        "email": "Adresse e-mail",
+        "message": "Message",
+        "name": "Nom",
+        "phone": "Téléphone",
+        "send": "Envoyer",
+        "success": "Votre message a été envoyé avec succès."
+      },
+      "countdown_timer": {
+        "d": "j",
+        "days": "jours",
+        "expires": "Expire dans",
+        "h": "h",
+        "hours": "heures",
+        "m": "m",
+        "minutes": "minutes",
+        "s": "s",
+        "seconds": "secondes"
+      },
+      "general": {
+        "copied": "Copié",
+        "copy": "Copier",
+        "follow_us": "Suivez-nous",
+        "menu": "Menu",
+        "optional": "Facultatif",
+        "share": "Partager"
+      },
+      "password_page": {
+        "password_form": {
+          "btn_label": "Valider",
+          "password_label": "Mot de passe"
+        }
+      },
+      "quiz": {
+        "btn_previous": "Précédent",
+        "btn_reload_quiz": "Recommencer le quiz"
+      },
+      "tracking": {
+        "btn_text": "Suivre",
+        "placeholder": "Entrez votre numéro de suivi"
+      },
+      "btn_add_to_cart": "Ajouter au panier",
+      "text_note_saved": "Note enregistrée",
+      "text_btn_save": "Enregistrer la note"
+    },
+    "cart": {
+      "title": "Votre panier",
+      "quantity": "Quantité",
+      "subtotal": "Sous-total",
+      "checkout": "Passer à la caisse",
+      "view_file": "Afficher le fichier",
+      "taxes_shipping_at_checkout_html": "Taxes et frais de port calculés lors du passage à la caisse.",
+      "alert_item_added": "Article ajouté au panier.",
+      "alert_items_added": "Articles ajoutés au panier.",
+      "alert_cart_updated": "Panier mis à jour avec succès.",
+      "empty_html": "Votre panier est vide.",
+      "continue_shopping": "Continuer les achats",
+      "shipping_rates": {
+        "modal_title": "Frais de livraison",
+        "no_results_found": "Aucun tarif d'expédition trouvé pour votre adresse.",
+        "modal_button_label": "Calculer les frais d'expédition",
+        "button_label": "Calculer les frais de livraison"
+      },
+      "note_label": "Note de commande",
+      "note_placeholder": "Entrez une note pour votre commande",
+      "note_button": "Enregistrer la note",
+      "note_saved": "Note enregistrée avec succès",
+      "empty_products_title": "Aucun produit dans le panier",
+      "remove": "Supprimer du panier",
+      "subtotal_discounted": "Sous-total réduit",
+      "subtotal_regular": "Sous-total régulier",
+      "summary": "Résumé du panier",
+      "view_cart": "Afficher le panier"
+    },
+    "blogs": {
+      "filter_by": "Filtrer par sujet",
+      "all_topics": "Tous les sujets",
+      "posted_in": "Blogs posted_in"
+    },
+    "shopify": {
+      "checkout": {
+        "payment": {
+          "payment_method_incompatible_with_payment_terms": "Le mode de paiement est incompatible avec les conditions de paiement."
+        },
+        "review": {
+          "blocks": {
+            "company_location": "Adresse de l'entreprise"
+          }
+        }
+      }
+    },
+    "customer": {
+      "addresses": {
+        "country": "Pays",
+        "province": "Région",
+        "zip": "Code postal"
+      }
+    },
+    "section": {
+      "age_verification": {
+        "title": "Vérification de l'âge",
+        "description": "Veuillez confirmer votre âge pour continuer. Vous devez avoir plus de 18 ans ou avoir atteint l'âge légal dans votre juridiction pour accéder à ce site.",
+        "month_label": "Mois",
+        "month_placeholder": "MM",
+        "day_label": "Jour",
+        "day_placeholder": "JJ",
+        "year_label": "Année",
+        "year_placeholder": "AAAA",
+        "btn_text": "Continuer"
+      }
+    },
+    "recipient": {
+      "form": {
+        "btn_label": "Envoyer",
+        "date_label": "Date",
+        "date_placeholder": "JJ/MM/AAAA",
+        "email_label": "Adresse e-mail",
+        "message_label": "Message",
+        "name_label": "Nom",
+        "properties": {
+          "date_properties": "Date sélectionnée",
+          "email_properties": "Adresse e-mail saisie",
+          "message_properties": "Message saisi",
+          "name_properties": "Nom saisi"
+        }
+      }
+    },
+    "testimonials": {
+      "purchase": "Témoignages achat",
+      "verified": "Témoignages vérifié",
+      "verified_review": "Témoignages avis vérifié"
+    },
+    "textWishlistAdd": "Ajouter à la liste de souhaits",
+    "textWishlistRemove": "Retirer de la liste de souhaits",
+    "textWishlistBtnLabel": "Ajouter à la liste de souhaits",
+    "shared": {
+      "copied_to_clipboard": "Copié dans le presse-papiers",
+      "add_to_wishlist":"Ajouter à la liste de souhaits",
+  "added_to_wishlist": "Ajouté à la liste de souhaits",
+  "remove_from_wishlist": "Retirer de la liste de souhaits",
+  "show_less": "Afficher moins",
+  "show_more": "Afficher plus",
+  "back": "Retour",
+  "see_all_results": "Voir tous les résultats",
+  "view_more": "Afficher plus",
+  "view_less": "Afficher moins",
+  "loading": "Chargement...",
+  "close": "Fermer",
+  "add_all_to_cart": "Tout ajouter au panier",
+  "products": "Produits",
+  "collections": "Collections",
+  "articles": "Articles",
+  "pages": "Pages",
+  "no_results_found": "Aucun résultat trouvé",
+  "clear_all": "Tout effacer",
+  "apply_filters": "Appliquer les filtres",
+  "available": "Disponible",
+  "sold_out": "Épuisé",
+  "out_of_stock": "Rupture de stock",
+  "only____count____left": "Seulement {{ count }} restant(s) !",
+  "count____items_left": "{{ count }} article(s) restant(s)",
+  "count____available": "{{ count }} disponible(s)"
+},
+"bundle": {
+  "text_add_to_bundle": "Ajouter au lot",
+  "text_added_to_bundle": "Ajouté au lot",
+  "text_remove": "Retirer",
+  "text_decrease_qty": "Réduire la quantité",
+  "text_increase_qty": "Augmenter la quantité",
+  "text_completed": "Offre complétée : [percentage]",
+  "text_uncompleted": "Dépensez [value] de plus pour obtenir [percentage] de réduction"
+    }
+  }
+}

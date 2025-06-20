@@ -1,0 +1,97 @@
+<footer>
+  <!-- Newsletter -->
+  <section class="newsletter text-white py-5" style="background-color: #816C58;">
+    <div class="container text-center">
+      <h2 class="h3 mb-3">Subscribe to our newsletter</h2>
+      <form method="post" action="/contact#contact_form" accept-charset="UTF-8" class="form-newsletter">
+        <input type="email" name="contact[email]" placeholder="Enter your email" required class="form-control form-control-lg mb-3" />
+        <button type="submit" class="btn btn-primary btn-lg">Subscribe</button>
+      </form>
+      <p class="text-muted mt-2 small">
+        By signing up, you agree to our
+        <a href="/pages/conditions-generales-de-vente" class="text-white">Terms of Sale</a> and
+        <a href="/pages/politique-de-confidentialite" class="text-white">Privacy Policy</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer Group -->
+  <section class="footer-group text-white py-5" style="background-color: #435660;">
+    <div class="container">
+
+      <!-- Custom Border -->
+      <div class="custom-border mb-4" style="border-top: 5px solid #000; opacity: 0.5;"></div>
+
+      <!-- Menus Footer -->
+      <div class="footer-menus row">
+        <div class="col-md-4 mb-4">
+          <h6>Help</h6>
+          {% assign help_menu = linklists['help-2'] %}
+          <ul class="list-unstyled">
+            {% for link in help_menu.links %}
+              <li><a href="{{ link.url }}" class="text-white">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6>Legal</h6>
+          {% assign legal_menu = linklists['legal'] %}
+          <ul class="list-unstyled">
+            {% for link in legal_menu.links %}
+              <li><a href="{{ link.url }}" class="text-white">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6>Store</h6>
+          {% assign store_menu = linklists['store'] %}
+          <ul class="list-unstyled">
+            {% for link in store_menu.links %}
+              <li><a href="{{ link.url }}" class="text-white">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <!-- About / Contact -->
+      <div class="about-area bg-dark text-white p-4 rounded">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3 mb-md-0">
+            <img src="https://cdn.shopify.com/s/files/1/0861/3180/2460/files/LOGO_ARRONDI_NT12052025_-_1200x628.jpg-removebg-preview.png?v=1747069835" />
+          </div>
+          <div class="col-md-9">
+            <p>A FALCON TRADING COMPANY</p>
+            <p>RCS PARIS 450 573 712</p>
+            <p><a href="tel:+33769238799" class="text-white">+33 7 69 23 87 99</a> | <a href="mailto:hello@thepetsociety.paris" class="text-white">hello@thepetsociety.paris</a></p>
+            <p>229 rue Saint Honoré - 75001 PARIS</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment / Social / Powered by -->
+      <div class="d-flex justify-content-between mt-4">
+        <div>
+          {% if settings.show_payment_icons %}
+            {% include 'payment-icons' %}
+          {% endif %}
+        </div>
+        <div>
+          {% if settings.show_social_icons %}
+            {% render 'social-icons' %}
+          {% endif %}
+        </div>
+        <div>
+          <small>
+            {% if settings.show_powered_by %}
+              Powered by Shopify
+            {% endif %}
+            {% if settings.show_theme_by %}
+              | Theme by Shopiweb.fr
+            {% endif %}
+          </small>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</footer>

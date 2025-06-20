@@ -1,0 +1,82 @@
+{% comment %} Section : Image avec texte + boutons (responsive, image mobile dédiée, no-gap auto) {% endcomment %}
+{% liquid
+  assign mt = section.settings.mt | prepend: 'mt-'
+  assign mb = section.settings.mb | prepend: 'mb-'
+  assign pt = section.settings.pt | prepend: 'pt-'
+  assign pb = section.settings.pb | prepend: 'pb-'
+
+  assign custom_class = section.settings.custom_class
+%}
+
+<section class="image-banner-wrapper {{ custom_class }} {{ mt }} {{ mb }} {{ pt }} {{ pb }}">
+  {% if section.settings.image != blank or section.settings.image_mobile != blank %}
+    <picture>
+      {% if section.settings.image_mobile != blank %}
+        <source media="(max-width: 768px)" srcset="{{ section.settings.image_mobile | image_url: width: 800 }}">
+      {% endif %}
+      <img src="{{ section.settings.image | image_url: width: 1920 }}" alt="{{ section.settings.title | escape }}" loading="lazy" class="image-banner-img">
+    </picture>
+  {% endif %}
+  <div class="image-banner-overlay">
+    {% if section.settings.title != blank %}
+      <h2 class="image-banner-title">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.description != blank %}
+      <p class="image-banner-description">{{ section.settings.description }}</p>
+    {% endif %}
+    <div class="btn-group">
+      {% if section.settings.btn_primary_label != blank %}
+        <a href="{{ section.settings.btn_primary_url }}" class="btn btn-primary">{{ section.settings.btn_primary_label }}</a>
+      {% endif %}
+      {% if section.settings.btn_secondary_label != blank %}
+        <a href="{{ section.settings.btn_secondary_url }}" class="btn btn-secondary">{{ section.settings.btn_secondary_label }}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+@media screen and (max-width: 768px) {
+  .image-banner-wrapper {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .shopify-section,
+  .newsletter,
+  .newsletter-inner,
+  .newsletter * {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "Image + boutons",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Image desktop" },
+    { "type": "image_picker", "id": "image_mobile", "label": "Image mobile (affichée uniquement < 768px)" },
+    { "type": "text", "id": "title", "label": "Titre", "default": "Discover a haven of elegance and innovation for your pets." },
+    { "type": "textarea", "id": "description", "label": "Description", "default": "Curated selections, gourmet treats, and premiumcare await" },
+    { "type": "text", "id": "btn_primary_label", "label": "Texte du bouton principal", "default": "COME ON IN !" },
+    { "type": "url", "id": "btn_primary_url", "label": "Lien du bouton principal" },
+    { "type": "text", "id": "btn_secondary_label", "label": "Texte du second bouton", "default": "ABOUT US" },
+    { "type": "url", "id": "btn_secondary_url", "label": "Lien du second bouton" },
+    { "type": "text", "id": "custom_class", "label": "Classe CSS personnalisée", "default": "image-banner" },
+    { "type": "range", "id": "mt", "label": "Marge supérieure", "min": 0, "max": 20, "step": 1, "default": 0 },
+    { "type": "range", "id": "mb", "label": "Marge inférieure", "min": 0, "max": 20, "step": 1, "default": 0 },
+    { "type": "range", "id": "pt", "label": "Padding supérieur", "min": 0, "max": 20, "step": 1, "default": 0 },
+    { "type": "range", "id": "pb", "label": "Padding inférieur", "min": 0, "max": 20, "step": 1, "default": 0 }
+  ],
+  "presets": [
+    {
+      "name": "Image + boutons",
+      "category": "Bannières"
+    }
+  ]
+}
+{% endschema %}
